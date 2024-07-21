@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Add styles for PostPreview component */
+.PostPreview {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .PostPreview:last-child {
+    border-bottom: none;
+  }
+  
+  .PostPreview .cover-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .PostPreview .post-info {
+    padding: 20px;
+  }
+  
+  .PostPreview .post-info h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .PostPreview .post-info p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .PostPreview .post-info .price {
+    font-size: 2rem;
+    font-weight: medium;
+    color: #333;
+  }
+
+  .PostPreview .post-info .description {
+    font-size: 2rem;
+    font-weight: small;
+    color: #333;
+  }
+  
+  .PostPreview .post-info .quantity {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  /* Add styles for NewArrivals component */
+  .NewArrivals {
+    margin-bottom: 32px;
+  }
+  
+  .NewArrivals h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+
+  .NewArrivals .title {
+    font-size: 64px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .NewArrivals .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .NewArrivals .grid md\:grid-cols-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .NewArrivals .grid lg\:grid-cols-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .CategoryPage .title {
+    font-size: 64px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+
+  .load-more-btn {
+    background-color: #fff; 
+    border: 1px solid #000; 
+    color: #000; 
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out; /* Add transition */
+  }
+  
+  .load-more-btn:hover {
+    background-color: #000; /* Fill the button with black color on hover */
+    color: #fff; /* Change text color to white on hover */
+  }
+  
+  .load-more-btn:hover:hover {
+    background-size: 100% 100%;
+  }
